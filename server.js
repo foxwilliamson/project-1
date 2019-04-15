@@ -15,7 +15,9 @@ app.get('/', (req, res) => {
     res.sendFile('views/index.html', {root: __dirname});
 });
 
-// Start Server
+// Database
+const db = require('./models');
 
+// Start Server
 app.listen(PORT, () => console.log(`Server running on PORT ${PORT}`));
 
